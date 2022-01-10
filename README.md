@@ -6,5 +6,7 @@ https://www.baeldung.com/mockito-junit-5-extension
 ## 2. Get familiar with the code and play with the app :)
 
 ## 3. Add tests to VoteRepositoryTest and VoteServiceTest classes.
-All existing methods in these classes, with all possible paths should be tested. 
+All existing methods in these classes, with all possible paths should be tested.
+They can be found in test/java/poll directory. 
+
 Hint: use Mockito to test the VoteServiceTest class. 

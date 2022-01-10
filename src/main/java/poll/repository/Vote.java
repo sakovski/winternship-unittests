@@ -16,6 +16,10 @@ public class Vote {
         this.answer = answer;
     }
 
+    public static Vote empty(long id) {
+        return new Vote(id, null, null, null);
+    }
+
     public long getId() {
         return id;
     }
@@ -30,5 +34,15 @@ public class Vote {
 
     public Answer getAnswer() {
         return answer;
+    }
+
+    @Override
+    public String toString() {
+        return "Vote{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", date=" + date +
+                ", answer=" + answer +
+                '}';
     }
 }
