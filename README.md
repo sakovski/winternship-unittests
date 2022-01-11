@@ -11,7 +11,7 @@ They can be found in test/java/poll directory.
 
 Hint: use Mockito to test the VoteServiceTest class. 
 
-Conventions:
+### Conventions:
 https://dzone.com/articles/7-popular-unit-test-naming - Choose 5th convention
 
 https://dzone.com/articles/writing-your-first-unit-tests
