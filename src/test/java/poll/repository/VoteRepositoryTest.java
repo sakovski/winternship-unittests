@@ -24,8 +24,17 @@ class VoteRepositoryTest {
         //when
         List<Vote> result = voteRepository.findAll();
         //then
+        assertThat(result).isNotEmpty();
         assertThat(result).hasSize(9);
-        assertThat(result.get(0).getName()).isEqualTo("Earvin Ngapeth");
+        assertThat(result.get(0).getId()).isEqualTo(1L);
+        assertThat(result.get(1).getId()).isEqualTo(2L);
+        assertThat(result.get(2).getId()).isEqualTo(3L);
+        assertThat(result.get(3).getId()).isEqualTo(4L);
+        assertThat(result.get(4).getId()).isEqualTo(5L);
+        assertThat(result.get(5).getId()).isEqualTo(6L);
+        assertThat(result.get(6).getId()).isEqualTo(7L);
+        assertThat(result.get(7).getId()).isEqualTo(8L);
+        assertThat(result.get(8).getId()).isEqualTo(9L);
     }
 
     @Test

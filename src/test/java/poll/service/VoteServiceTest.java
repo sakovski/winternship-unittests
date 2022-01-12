@@ -59,7 +59,7 @@ class VoteServiceTest {
     }
 
     @Test
-    void should_throw_exception_when_findById_not_found_Vote() {
+    void should_throw_exception_when_find_by_id_not_found_Vote() {
         //given
         long id = 100;
         when(voteRepository.findById(id)).thenReturn(Optional.empty());
@@ -111,7 +111,7 @@ class VoteServiceTest {
     }
 
     @Test
-    void should_return_yes_answer_won() {
+    void should_return_true_when_majority_answers_were_yes() {
         //given
         Answer answer = Answer.YES;
         when(voteRepository.findAll()).thenReturn(answersDb);
